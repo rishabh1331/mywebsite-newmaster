@@ -1,0 +1,178 @@
+# Site settings
+baseURL = "https://davidteboul.netlify.app/"
+languageCode = "en-us"
+title = "David's Portfolio"
+theme = "forty"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+# Enter your disqus shortname to enable comments
+disqusShortname = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # Provide your metadata here.
+  name = "David Teboul"
+  description = ""
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Just a custom image variable, please define it in .md files for content.
+  image = ""
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Navigation Section
+  [params.navigation]
+    title = "David Teboul"
+    #subtitle = ""
+    menu = "Menu"
+    # Optional logo as brand stored in img/
+    # logo = "logo.png"
+
+    [[params.navigation.links]]
+      name = "Home"
+      url = "#"
+
+    [[params.navigation.links]]
+      name = "My CV"
+      url = "blogs/MyCV.pdf"
+
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+
+  # Banner section
+  [params.banner]
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title = "Welcome, I am David Teboul"
+    subtitle = "French and American student at London Business School reading for the Masters in Financial Analysis programme. Currently actively looking for a Summer Internship in Global Capital Markets or Advisory"
+    buttonText = "Learn more about me"
+
+
+  # Tiles Section
+  [params.tiles]
+    enable = true
+    # Display your showcases here.
+     [[params.tiles.showcase]]
+      title = "Who am I?"
+      subtitle = "From me growing up to now"
+      image = "David_Teboul_copy.jpg"
+      url = "blogs/CV"
+    
+    [[params.tiles.showcase]]
+      title = "What happens when the yield curve inverts?"
+      subtitle = "Using historical data to analyse the impacts on the economy when the yield curve inverts"
+      image = "yield.jpg"
+      url = "blogs/Inversion"
+
+    [[params.tiles.showcase]]
+      title = "Fancy a trip to Brussels during the reading week?"
+      subtitle = "I will forecast the cost for a 4-day trip in Brussels for 2 people thanks to regression analyses"
+      image = "bruxelles_GP.jpg"
+      url = "blogs/Brussels"
+
+[[params.tiles.showcase]]
+      title = "Climate change is real!"
+      subtitle = "Let us prove it through hypothesis testing"
+      image = "image_climate.jpg"
+      url = "blogs/Climate"
+
+    [[params.tiles.showcase]]
+     title = "Has the payment gap closed?"
+      subtitle = "Using data from Omega Plc. I will explore if wage discrimination still exists in 2020."
+      image = "gap.jpg"
+      url = "blogs/Gap"
+
+    [[params.tiles.showcase]]
+      title = "How did COVID impact bike rentals"
+      subtitle = "Analysing Tfl bike data, in the city of London"
+      image = "BoJo_TFL.jpg"
+      url = "blogs/Bike"
+    # You can make more showcases by copy and pasting the code above
+
+  [params.blog]
+    # All blogs defined in their own files. You can find example blogs
+    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    # To add more blogs just copy and paste the code.
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "More about me"
+    subtitle = """ I was born in the United States in January 1999, more precisely in Livingston New Jersey. During my childhood I grew up between Paris (France) and Princeton (New Jersey). I am reading for the Masters in Financial Analysis degree at London Business School and wish to undertake a career in finance, and more specifically in either Global Capital Markets or in Global Advisory. Feel free to send me an email, or you can reach out on LinkedIn."""
+    buttonText = "Get Started"
+    url = "blogs"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    buttonSend = "Send message"
+    buttonClear = "Clear"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below and uncomment
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    formEmail = "dteboul.mfa2021@london.edu"
+
+    # Contact Section
+    # You can add multiple emails, phone numbers, or addresses
+    # by copying the corresponding map with frontmatter code.
+    [[params.contact.email]]
+    title = "Email"
+    email = "dteboul.mfa2021@london.edu"
+
+    [[params.contact.phone]]
+    title = "Phone"
+    phone = "+33 (06) 31845173"
+
+    [[params.contact.address]]
+    title = "Address"
+    street = "London Business School, Regent's Park"
+    city = "London, NW1 4SA"
+    country = "England"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "David Teboul"
+
+    # Uses font awesome icons
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://github.com/David-Teboul"
+      label = "GitHub"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      url= "https://www.linkedin.com/in/david-teboul/"
+      label = "LinkedIn"

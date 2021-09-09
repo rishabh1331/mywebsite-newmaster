@@ -1,0 +1,39 @@
+---
+categories:
+- ""
+- ""
+date: "2017-10-31T21:28:43-05:00"
+description: ""
+draft: false
+image: David_Teboul_.jpg
+keywords: ""
+slug: CV
+title: Who am I?
+---
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+I was born in the United States in January 1999, more precisely in Livingston New Jersey. During my childhood I grew up between Paris (France) and Princeton (New Jersey). I am reading for the Masters in Financial Analysis degree at London Business School and wish to undertake a career in finance, and more specifically in either Global Capital Markets or in Global Advisory.
+
+Thanks to my multicultural background I was, and still is, always interested in learning new approaches and adopting several points of view. As far as I can remember, I always was very interested in quantitative topics, and when I grew I started to develop interpersonal and leadership skills whilst pursuing my passion for numbers and mathematical puzzles.
+
+Outside of the academic and professional framework, I love playing soccer/football (I do not know where you are reading this from) and chess, I am also an avid swimmer. When COVID will be more under control, I would gladly start attending theatrical plays once again, my personal favorites are the ones of the classical era.
+
+Here below is my CV, and feel free to reach out:
+
+```{r, echo=FALSE, fig.width=3,fig.height=3}
+knitr::include_graphics("/img/rishabhcv.jpg",error=FALSE)
+```
